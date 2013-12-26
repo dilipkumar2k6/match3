@@ -21,3 +21,16 @@ This program perform following <br\>
 5. Print Matches in (x,y) co-ordinate format. Please note; this (x,y) is not position in 2D array. In case you want to use it as 2D array position then use rever i.e. (y,x)<br\>
 6. Print result grid with matched block marked as X<br\>
 
+Open Bugs
+======
+This program has some known bugs. Following are more details on known bugs. <br/>
+1. Program is not tested when grid is having same blocs in diagonal format. i,e, in following format <br/>
+--  --  --  --  2  --  --  --  --  
+--  --  --  --  2  --  --  --  --  
+--  --  --  --  2  --  --  --  --  
+2   2   2   2   2  2   2   2   2  
+--  --  --  --  2  --  --  --  --  
+--  --  --  --  2  --  --  --  --  
+--  --  --  --  2  --  --  --  --  
+--  --  --  --  2  --  --  --  --  
+--  --  --  --  2  --  --  --  --  
