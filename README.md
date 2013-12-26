@@ -21,6 +21,25 @@ This program perform following <br\>
 5. Print Matches in (x,y) co-ordinate format. Please note; this (x,y) is not position in 2D array. In case you want to use it as 2D array position then use rever i.e. (y,x)<br\>
 6. Print result grid with matched block marked as X<br\>
 
+Algorithm Used
+======
+1. Loop each block in 2D Array
+2. For each block; first look for match horizontally; if match is not found horizontally then look for vertically as match find process #3
+3. Same match find process is used for both horizontal and vertical tracing
+4. In match find process; following are steps
+    a. check if current block is already selected or not
+    b. If current block is not already processed then find next two more block and see if it can create minimum 3 match;
+    c. If does then add these three blocks as match 
+    d. Loop for remaining blocks and see if new blocks can be added in this match or not.
+5. If current block is already selected for match then don't do anything
+6. If next block (step 4#b and 4#d) is already processed then look for following
+    a. Check if this block used in other match is located at end or at middel
+    b. If located at end then remove this match from previous match and add into current match
+    c. If located at the middle of previous match then need to check the size of current match and previous match and based on that split previous match and use this block for current match.
+
+Note: 6#c is not implemented.
+
+
 Open Bugs
 ======
 This program has some known bugs. Following are more details on known bugs. <br/>
